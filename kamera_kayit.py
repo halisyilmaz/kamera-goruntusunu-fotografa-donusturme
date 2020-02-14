@@ -4,7 +4,7 @@ from os import path
 cap = cv2.VideoCapture(0)   # Programa bilgisayarınızın kamerasını video kaynağı olarak tanıtır
                             # Dahili webcam için 0 veya 1 kullanın. Videolar için 0 olan değeri "dosyanın_yeri/video.mp4"
                             # şeklinde değiştirip videoları da fotoğraf olarak kaydedebilirsiniz
-i = 0                       # i en son kaydedilen fotoğrafın numarasını saklar
+i = 0                       # i değişkeni en son kaydedilen fotoğrafın numarasını saklar
 while True:                 # Daha önceden yapılan dönüştürmeleri kaybetmemek için programın kaldığı yeri bulmasını sağlayan döngü
     if path.exists("fotograflar/goruntu"+ str(i) +".jpg"):
         i += 1
